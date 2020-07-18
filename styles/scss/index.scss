@@ -17,6 +17,11 @@ a:focus {
 }
 
 
+.overflow{
+    overflow: hidden;
+    max-height: 100vh;
+}
+
 .button {
     padding: 7px 10px;
     text-decoration: none;
@@ -25,6 +30,7 @@ a:focus {
     font-size: 14px;
     text-align: center;
     transition: 0.3s;
+    border: none;
     &:hover{
         box-shadow: 0 0px 7px 0.5px rgba(0, 0, 0, 0.3);
     }
@@ -697,4 +703,64 @@ a:focus {
     }
 
 
+}
+
+
+// popups
+.popups{
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+}
+
+.popup{
+    padding: 30px 20px;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0px auto; 
+    position: relative;
+    
+    .menu__search{
+        margin-bottom: 20px;
+        border: 1px solid #e1e1e1;
+        border-radius: 20px;
+    }
+
+    &__button{
+        background: $darkBlue;
+        display: block;
+        margin: 0px auto;
+    }
+
+    &__heading{
+        font-size: 24px;
+        font-weight: bold;
+        color: $darkBlue;
+        margin-bottom: 20px;
+    }
+
+    &__close{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        img{
+            width: 100%;
+        }
+    }
 }

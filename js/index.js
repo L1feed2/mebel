@@ -27,6 +27,17 @@ $(document).ready(function() {
         ]
     })
 
+    $('.popup-link').click(function(){
+        $('.popups').fadeIn();
+
+        $('.main').addClass('overflow');
+        $('.popup__close').click(function(){
+            $('.popups').fadeOut();
+            $('.main').removeClass('overflow');
+        })
+
+    })
+
 
     // $('.new__item--small').slick({
     //     nextArrow: '<div class="new__next new__arrow"><span class="icon-chevron"></span></div>',
