@@ -1116,6 +1116,43 @@ a:focus {
     grid-template-columns: repeat(4, calc(25% - 5px));
     grid-gap: 10px;
 
+    
+
+    &__row{
+        padding: 5px;
+    }
+
+    &__drop{
+        width: 100%;
+        display: none;
+        position: absolute;
+        bottom: -100px;
+        box-sizing: border-box;
+        background: #ffffff;
+        border: 1px solid #E6E6E6;
+        border-top: none;
+        color: #646464;
+        padding-left: 10px;
+    }
+
+    &__bold {
+        font-weight: bold;
+        opacity: 1;
+        color: #000000;
+    }
+
+    &__outer{
+        position: relative;
+        transition: 0.15s;
+        &:hover{
+            box-shadow: 0 100px 80px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            .catalog-grid__drop{
+                display: block;
+            }
+        }
+    }
+
     &__item {
         grid-row: unset;
         grid-column: unset;
@@ -1127,7 +1164,6 @@ a:focus {
         border: 1px solid #E6E6E6;
         padding: 25px 40px;
         box-sizing: border-box;
-        position: relative;
 
         .new__img {
             margin: 0;
@@ -1144,6 +1180,8 @@ a:focus {
         }
 
         &:hover {
+            z-index: 10;
+            
             .menu__button {
                 opacity: 1;
 
