@@ -183,7 +183,7 @@ a:focus {
   display: block;
 }
 .catalog-nav__dropdown-second-item:hover > .catalog-nav__dropdown-third {
-  display: block;
+  display: flex;
 }
 .catalog-nav__dropdown-third {
   display: none;
@@ -196,6 +196,33 @@ a:focus {
   width: 320px;
   transition: left 0.5s;
   left: 302px;
+}
+.catalog-nav__dropdown-third--item {
+  width: 100%;
+}
+.catalog-nav__dropdown-wrap {
+  width: 100%;
+}
+.catalog-nav__banner {
+  position: absolute;
+  left: 320px;
+  top: 0;
+  box-shadow: 0 0 13px rgba(36, 66, 125, 0.2);
+  z-index: -1;
+}
+.catalog-nav__plate .button {
+  background: #FF4D47;
+  color: #ffffff;
+}
+.catalog-nav__discount {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 5px 10px;
+  background: #FF4D47;
+  color: #ffffff;
+  border-radius: 15px;
+  text-transform: uppercase;
 }
 .catalog-nav__dropdown-link, .catalog-nav__dropdown-second-link, .catalog-nav__dropdown-third-link {
   position: relative;

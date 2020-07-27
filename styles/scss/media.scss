@@ -32,16 +32,6 @@ $darkBlue: #0e3048;
         }
     }
 
-    
-}
-
-@media screen and (max-width: 1175px){
-    .catalog-grid{
-        grid-template-columns: repeat(3, calc(33% - 5px));
-    }
-}
-
-@media screen and (max-width: 1050px){
     .catalog-nav{
         &__title{
             width: 260px;
@@ -55,6 +45,24 @@ $darkBlue: #0e3048;
         &__dropdown-third{
             width: 250px;
             left: 250px;
+        }
+
+        &__banner{
+            left: 250px;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 1175px){
+    .catalog-grid{
+        grid-template-columns: repeat(3, calc(33% - 5px));
+    }
+
+    .catalog-nav{
+        &__banner{
+            display: none;
         }
     }
 }

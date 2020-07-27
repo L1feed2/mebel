@@ -22,13 +22,7 @@
   .new__item--medium {
     grid-column: 1/2;
   }
-}
-@media screen and (max-width: 1175px) {
-  .catalog-grid {
-    grid-template-columns: repeat(3, calc(33% - 5px));
-  }
-}
-@media screen and (max-width: 1050px) {
+
   .catalog-nav__title {
     width: 260px;
   }
@@ -39,6 +33,18 @@
   .catalog-nav__dropdown-third {
     width: 250px;
     left: 250px;
+  }
+  .catalog-nav__banner {
+    left: 250px;
+  }
+}
+@media screen and (max-width: 1175px) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, calc(33% - 5px));
+  }
+
+  .catalog-nav__banner {
+    display: none;
   }
 }
 @media screen and (max-width: 940px) {
